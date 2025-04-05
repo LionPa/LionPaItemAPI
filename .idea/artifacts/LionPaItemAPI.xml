@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LionPaItemAPI">
+    <output-path>$PROJECT_DIR$/../Bunker/dependency</output-path>
+    <root id="archive" name="LionPaItemAPI.jar">
+      <element id="module-output" name="LionPaItemAPI" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,9 @@
+name: LionPaItemAPI
+version: '${project.version}'
+main: io.lionpa.lionpaitemapi.LionPaItemAPI
+api-version: '1.21'
+prefix: LionPaItemAPI
+load: STARTUP
+authors: [LionPa]
+description: Simple and functional item api
+website: https://github.com/LionPa
