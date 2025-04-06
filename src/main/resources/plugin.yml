@@ -7,3 +7,6 @@ load: STARTUP
 authors: [LionPa]
 description: Simple and functional item api
 website: https://github.com/LionPa
+
+softdepend:
+  - Speedium
