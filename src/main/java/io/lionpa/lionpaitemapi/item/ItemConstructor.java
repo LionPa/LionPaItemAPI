@@ -2,6 +2,7 @@ package io.lionpa.lionpaitemapi.item;
 
 import io.lionpa.lionpaitemapi.LionPaItemAPI;
 import io.lionpa.lionpaitemapi.item.events.ItemBreakBlock;
+import io.lionpa.lionpaitemapi.item.events.ItemEntityDamage;
 import io.lionpa.lionpaitemapi.item.events.ItemSwap;
 import io.lionpa.lionpaitemapi.item.events.ItemUse;
 import org.bukkit.Bukkit;
@@ -40,6 +41,7 @@ public interface ItemConstructor extends Listener {
 
     default void use(ItemUse use){}
     default void swap(ItemSwap swap){}
+    default void entityDamage(ItemEntityDamage entityDamage){}
     default void breakBlockWithItem(ItemBreakBlock breakBlock){}
 
     default String getId(){

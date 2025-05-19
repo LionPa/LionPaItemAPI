@@ -6,7 +6,6 @@ import org.bukkit.event.block.Action;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 
-// FIXME
 public class ItemUse extends ItemApiEvent {
 
     private boolean canceled;

@@ -1,0 +1,17 @@
+freezing_sword:
+  type: item
+
+  variants:
+    - default:
+      material: wooden_sword
+      display_name: Freezing Sword
+      custom_model_data: 1
+      lore:
+          - "Charge: {CHARGES}/3"
+          - "+1 Charge per 3 kills"
+          - "Right click to shoot ice"
+      fields:
+        KILLS: int 0
+        CHARGES: int 3
+      damage: 7
+

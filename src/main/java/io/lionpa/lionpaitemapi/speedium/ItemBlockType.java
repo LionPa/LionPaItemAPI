@@ -14,5 +14,7 @@ public class ItemBlockType extends BlockType {
     @Override
     public void run(CodeBuilder codeBuilder, String s, YamlWrapper yamlWrapper) {
         Log.error("ItemBlockType is not supported yet");
+
+        //codeBuilder.addObject();
     }
 }

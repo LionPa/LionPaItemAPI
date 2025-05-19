@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerSwapHandItemsEvent;
 import org.bukkit.inventory.EquipmentSlot;
@@ -76,7 +77,7 @@ public class EventsInvoker implements Listener {
             ItemSwap swap = new ItemSwap(player, item, newHand);
             customItem.getConstructor().swap(swap);
 
-            return swap.isCanceled();
+            return swap.isCancelled();
         }
         return false;
     }
@@ -107,5 +108,10 @@ public class EventsInvoker implements Listener {
         if (!item.getItemMeta().getPersistentDataContainer().has(NamespacedKeys.ITEM_ID_KEY)) return true;
 
         return false;
+    }
+
+    @EventHandler
+    public static void entityDamage(EntityDamageByEntityEvent e){
+
     }
 }
